@@ -2,3 +2,52 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+@import url('refinery/application.css');
+
+body {
+  background: #ddd;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#body_content, #side_body_content {
+  float: left;
+  background: white;
+  color: #333;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 15px;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
+}
+
+#body_content {
+    width: 60%;
+}
+
+#side_body_content {
+    width: 25%;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#menu ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+#menu ul li.selected a, #menu ul li a:hover {
+  background: #CCC;
+}
+
