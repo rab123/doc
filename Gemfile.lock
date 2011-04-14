@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-videos (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -202,6 +207,7 @@ DEPENDENCIES
   rails (= 3.0.5)
   refinerycms (= 0.9.9.15)
   refinerycms-i18n (~> 0.9.9.16)
+  refinerycms-videos (= 1.0)!
   rspec
   rspec-rails
   sqlite3

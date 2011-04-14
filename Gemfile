@@ -65,3 +65,7 @@ end
 gem 'refinerycms-i18n',         '~> 0.9.9.16'
 
 # END USER DEFINED
+
+gem 'refinerycms-videos', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-videos', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-videos', '1.0', :path => 'vendor/engines'

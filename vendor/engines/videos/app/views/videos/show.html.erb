@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @video.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @video.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @video.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Url</h1>
+    <p>
+      <%=raw @video.url %>
+    </p>
+  </section>
+  <section>
+    <h1>Embed Code</h1>
+    <p>
+      <%=raw @video.embed_code %>
+    </p>
+  </section>
+  <section>
+    <h1>Rating</h1>
+    <p>
+      <%=raw @video.rating %>
+    </p>
+  </section>
+  <section>
+    <h1>Age Group</h1>
+    <p>
+      <%=raw @video.age_group %>
+    </p>
+  </section>
+  <section>
+    <h1>Finder</h1>
+    <p>
+      <%=raw @video.finder_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Subject</h1>
+    <p>
+      <%=raw @video.subject %>
+    </p>
+  </section>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @video.category %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="videos">
+      <% @videos.each do |video| %>
+        <li>
+          <%= link_to video.title, video_url(video) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
